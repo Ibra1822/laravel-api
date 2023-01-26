@@ -21,17 +21,19 @@
 
     <!-- Usando Vite -->
     @vite(['resources/js/app.js'])
+
+
+    {{-- ****************** Per VUE  ***************** --}}
+    {{-- @vite(['resources/js/appVue.js','resources/scss/appVue.scss']) --}}
+    {{-- ************************************************* --}}
+
 </head>
 
 <body>
-    <div id="app">
-
-        @include('admin.partials.header')
+    @include('admin.partials.header')
     <main class="">
-
-    </main>
         @yield('content')
-    </div>
+    </main>
 </body>
 
 </html>
