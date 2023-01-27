@@ -21,7 +21,7 @@ export default {
 <style lang="scss" scoped>
 header {
     height: 100px;
-    background-color: gainsboro;
+    background-color: lightslategrey;
     display: flex;
     justify-content: center;
     align-items: center;
