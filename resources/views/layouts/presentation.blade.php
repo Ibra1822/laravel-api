@@ -20,18 +20,18 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Usando Vite -->
-    @vite(['resources/js/app.js'])
+    {{-- @vite(['resources/js/app.js']) --}}
 
 
     {{-- ****************** Per VUE  ***************** --}}
-    {{-- @vite(['resources/js/appVue.js','resources/scss/appVue.scss']) --}}
+    @vite(['resources/js/appVue.js','resources/scss/appVue.scss'])
     {{-- ************************************************* --}}
 
 </head>
 
 <body>
-    @include('admin.partials.header')
-    <main class="">
+    {{-- @include('admin.partials.header') --}}
+    <main>
         @yield('content')
     </main>
 </body>
