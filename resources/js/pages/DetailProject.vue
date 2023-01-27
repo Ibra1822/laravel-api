@@ -36,6 +36,11 @@ export default {
             <div v-for="item in detail.tech" :key="item.id" class="te-badge">
                 {{ item.name }}
             </div>
+
+            <div>
+                <img :src="detail.cover_image" alt="" />
+            </div>
+
             <p>{{ detail.summary }}</p>
         </div>
     </div>
@@ -84,6 +89,10 @@ h1 {
         font-weight: bold;
         margin: 10px 20px;
         border-radius: 10px;
+    }
+
+    img {
+        width: 300px;
     }
 
     p {

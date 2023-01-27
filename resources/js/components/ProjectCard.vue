@@ -11,8 +11,9 @@ export default {
     <div class="container">
         <router-link
             :to="{ name: 'DetailProject', params: { slug: project.slug } }"
-            ><h3>{{ project.name }}</h3></router-link
         >
+            <h3>{{ project.name }}</h3>
+        </router-link>
         <h3>{{ project.client_name }}</h3>
         <p>{{ project.summary }}</p>
     </div>
@@ -20,7 +21,6 @@ export default {
 
 <style lang="scss" scoped>
 .container {
-    height: 300px;
     width: 85%;
     margin: 35px auto;
     border: 1px solid #000;
@@ -30,6 +30,14 @@ export default {
     h3,
     p {
         margin: 20px;
+    }
+    a {
+        text-decoration: none;
+        text-align: center;
+        color: lightslategray;
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }
 </style>

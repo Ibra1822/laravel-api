@@ -20,6 +20,12 @@ class PostController extends Controller
 
         $detail = Project::where('slug',$slug)->with(['type','tech'])->first();
 
+        if($detail->cover_image){
+            $detail->cover_image = url('storage/'. $detail->cover_image);
+        }else{
+            $detail->cover_image = url('storage/uploads/orionthemes-placeholder-image.png');
+        }
+
         return response()->json(compact('detail'));
     }
 
