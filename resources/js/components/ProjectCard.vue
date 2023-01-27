@@ -9,7 +9,10 @@ export default {
 
 <template>
     <div class="container">
-        <h3>{{ project.name }}</h3>
+        <router-link
+            :to="{ name: 'DetailProject', params: { slug: project.slug } }"
+            ><h3>{{ project.name }}</h3></router-link
+        >
         <h3>{{ project.client_name }}</h3>
         <p>{{ project.summary }}</p>
     </div>

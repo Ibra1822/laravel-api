@@ -15,7 +15,6 @@ export default {
     methods: {
         getApi() {
             axios.get(this.api).then((result) => {
-                console.log(result.data.projects);
                 this.projects = result.data.projects;
             });
         },

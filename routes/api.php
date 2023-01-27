@@ -24,6 +24,7 @@ Route::namespace('Api')
         ->group(function(){
 
             Route::get('/',[PostController::class,'index']);
+            Route::get('/{slug}',[PostController::class,'show']);
 
         });
 
