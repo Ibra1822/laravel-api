@@ -1,13 +1,19 @@
 <script>
-import axios from "axios";
-
+import Appheader from "./partials/Appheader.vue";
 export default {
     name: "App",
+    components: {
+        Appheader,
+    },
+    data() {
+        return {};
+    },
 };
 </script>
 
 <template>
-    <h1>start</h1>
+    <Appheader />
+    <router-view></router-view>
 </template>
 
-<style></style>
+<style lang="scss"></style>
