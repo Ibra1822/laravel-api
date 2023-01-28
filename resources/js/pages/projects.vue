@@ -25,6 +25,7 @@ export default {
 };
 </script>
 <template>
+    <h1>Progetti</h1>
     <ProjectCard v-for="item in this.projects" :key="item.id" :project="item" />
 </template>
 

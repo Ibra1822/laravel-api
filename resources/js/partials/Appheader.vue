@@ -29,16 +29,17 @@ header {
         display: flex;
         list-style: none;
         li {
-            padding: 10px 20px;
             font-size: 1.3rem;
-            border: 1px solid transparent;
             cursor: pointer;
-            &:hover {
-                border: 1px solid #fff;
-            }
             a {
+                border: 1px solid transparent;
+                padding: 10px 20px;
                 text-decoration: none;
                 color: #fff;
+                &:hover,
+                &.router-link-exact-active {
+                    border: 1px solid #fff;
+                }
             }
         }
     }
