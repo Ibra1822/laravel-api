@@ -10,7 +10,7 @@ export default {
 };
 </script>
 <template>
-    <div class="fourth-step">
+    <div class="new-step">
         <div class="step-left">
             <img
                 src="https://1000logos.net/wp-content/uploads/2020/09/JavaScript-Logo.png"
@@ -32,43 +32,19 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-.fourth-step {
-    display: flex;
-    margin-top: 50px;
-    .step-left {
-        width: 50%;
-        img {
-            width: 100%;
-        }
+.step-right {
+    h2 {
+        color: #efbe25;
     }
-    .step-right {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 50%;
-        text-align: center;
-        h2 {
-            font-size: 2.4rem;
-            color: #e5a127;
-        }
-        p {
-            font-size: 1.6rem;
-            color: #f1be27;
-        }
-        ul {
-            list-style: none;
-            li {
-                margin: 20px 10px;
-            }
+    p {
+        color: #e4a127;
+    }
+    ul {
+        li {
             a {
-                text-decoration: none;
-                padding: 15px 20px;
-                font-size: 1.3rem;
-                color: #e5a127;
-                border: 1px solid transparent;
+                color: #efbe25;
                 &:hover {
-                    border: 1px solid #f1be27;
-                    border-radius: 5px;
+                    border-color: #efbe25;
                 }
             }
         }

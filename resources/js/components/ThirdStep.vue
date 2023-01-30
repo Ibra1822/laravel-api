@@ -10,7 +10,7 @@ export default {
 };
 </script>
 <template>
-    <div class="third-step">
+    <div class="new-step">
         <div class="step-left">
             <img
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1200px-Bootstrap_logo.svg.png"
@@ -32,46 +32,22 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-.third-step {
-    height: 600px;
+.new-step {
     background-color: #f6f5f7;
-    display: flex;
-    padding: 40px;
-    margin: 0;
-    .step-left {
-        width: 50%;
-        img {
-            height: 80%;
-        }
+}
+.step-right {
+    h2 {
+        color: #7009f3;
     }
-    .step-right {
-        width: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        h2 {
-            font-size: 2.6rem;
-            color: #7308f5;
-        }
-        p {
-            font-size: 1.5rem;
-            color: #8b0dfc;
-        }
-        ul {
-            list-style: none;
-            li {
-                margin: 20px 0px;
-            }
+    p {
+        color: #8f0dfe;
+    }
+    ul {
+        li {
             a {
-                text-decoration: none;
-                color: #7308f5;
-                padding: 10px 20px;
-                font-size: 1.3rem;
-                border: 1px solid transparent;
+                color: #7009f3;
                 &:hover {
-                    border: 1px solid #7308f5;
-                    border-radius: 5px;
+                    border-color: #7009f3;
                 }
             }
         }

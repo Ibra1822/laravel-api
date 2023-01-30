@@ -10,18 +10,18 @@ export default {
 };
 </script>
 <template>
-    <div class="first-step">
-        <div class="first-left debug">
+    <div class="new-step">
+        <div class="step-left debug">
             <img
                 src="https://cdn-icons-png.flaticon.com/512/1532/1532556.png"
                 alt=""
             />
         </div>
-        <div class="first-right debug">
+        <div class="step-right debug">
             <div>
                 <h2>Html</h2>
                 <p>La struttura di ogni pagina Web</p>
-                <div class="links">
+                <div>
                     <ul>
                         <li v-for="item in store.html_first" :key="item">
                             <a :href="item.href">{{ item.name }}</a>
@@ -34,49 +34,22 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-.first-step {
-    height: 500px;
-    margin: auto;
-    display: flex;
-    border-radius: 20px;
-    background-color: #f6f6f6;
-    .first-left {
-        height: 100%;
-        padding: 30px;
-        width: 50%;
-        img {
-            height: 100%;
-            object-fit: cover;
-        }
+.new-step {
+    background-color: #f6f5f7;
+}
+.step-right {
+    h2 {
+        color: #ff641a;
     }
-    .first-right {
-        width: 50%;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        h2 {
-            font-size: 2.6rem;
-            color: #fe641a;
-        }
-        p {
-            font-size: 1.5rem;
-            color: #ff9202;
-        }
-        ul {
-            list-style: none;
-            li {
-                margin: 20px;
-                a {
-                    text-decoration: none;
-                    font-size: 1.3rem;
-                    color: #fe641a;
-                    padding: 10px 20px;
-                    margin: 5px 0px;
-                    &:hover {
-                        border: 1px solid #fe641a;
-                        border-radius: 5px;
-                    }
+    p {
+        color: #ff9200;
+    }
+    ul {
+        li {
+            a {
+                color: #ff641a;
+                &:hover {
+                    border-color: #ff641a;
                 }
             }
         }

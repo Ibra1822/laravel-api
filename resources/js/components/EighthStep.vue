@@ -1,7 +1,7 @@
 <script>
 import { store } from "../data/store";
 export default {
-    name: "FifthStep",
+    name: "EighthStep",
     data() {
         return {
             store,
@@ -12,14 +12,17 @@ export default {
 <template>
     <div class="new-step">
         <div class="step-left">
-            <img src="https://vuejs.org/images/logo.png" alt="" />
+            <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png"
+                alt=""
+            />
         </div>
         <div class="step-right">
             <div>
-                <h2>VueJS</h2>
-                <p>FrameWork di Javascript</p>
+                <h2>Laravel</h2>
+                <p>FrameWork su PHP</p>
                 <ul>
-                    <li v-for="item in store.Vue_fifth" :key="item">
+                    <li v-for="item in store.laravel_eighth" :key="item">
                         <a :href="item.href">{{ item.name }}</a>
                     </li>
                 </ul>
@@ -29,22 +32,19 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-.new-step {
-    background-color: #f6f5f7;
-}
 .step-right {
     h2 {
-        color: #42b883;
+        color: #ff2919;
     }
     p {
-        color: #354a5e;
+        color: #354a5d;
     }
     ul {
         li {
             a {
-                color: #42b883;
+                color: #ff2919;
                 &:hover {
-                    border-color: #42b883;
+                    border-color: #ff2919;
                 }
             }
         }

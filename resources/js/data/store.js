@@ -76,59 +76,59 @@ export const store = reactive({
         },
         {
             href: "https://github.com/Ibra1822/js-biglietto-treno",
-            name: "js-biglietto-treno",
+            name: "Js-biglietto-treno",
         },
         {
             href: "https://github.com/Ibra1822/js-biglietto-treno-form",
-            name: "js-biglietto-treno-form",
+            name: "Js-biglietto-treno-form",
         },
         {
             href: "https://github.com/Ibra1822/js-mail-dadi",
-            name: "js-mail-dadi",
+            name: "Js-mail-dadi",
         },
         {
             href: "https://github.com/Ibra1822/js-array-carousel",
-            name: "js-array-carousel",
+            name: "Js-array-carousel",
         },
         {
             href: "https://github.com/Ibra1822/js-lista-spesa",
-            name: "js-lista-spesa",
+            name: "Js-lista-spesa",
         },
         {
             href: "https://github.com/Ibra1822/js-mail-dadi",
-            name: "js-mail-dadi",
+            name: "Js-mail-dadi",
         },
         {
             href: "https://github.com/Ibra1822/js-paliedispari",
-            name: "js-paliedispari",
+            name: "Js-paliedispari",
         },
         {
             href: "https://github.com/Ibra1822/js-campominato-grid",
-            name: "js-campominato-grid ",
+            name: "Js-campominato-grid ",
         },
         {
             href: "https://github.com/Ibra1822/js-campominato-dom",
-            name: "js-campominato-dom",
+            name: "Js-campominato-dom",
         },
         {
             href: "https://github.com/Ibra1822/js-carousel-autoplay",
-            name: "js-carousel-autoplay",
+            name: "Js-carousel-autoplay",
         },
         {
             href: "https://github.com/Ibra1822/js-our-team",
-            name: "js-our-team",
+            name: "Js-our-team",
         },
         {
             href: "https://github.com/Ibra1822/js-social-posts",
-            name: "js-social-posts",
+            name: "Js-social-posts",
         },
         {
             href: "https://github.com/Ibra1822/js-social-posts",
-            name: "js-social-posts",
+            name: "Js-social-posts",
         },
         {
             href: "https://github.com/Ibra1822/js-array-objects-carousel",
-            name: "js-array-objects-carousel",
+            name: "Js-array-objects-carousel",
         },
     ],
 
@@ -178,27 +178,27 @@ export const store = reactive({
     Php_sixth: [
         {
             href: "https://github.com/Ibra1822/php-badwords",
-            name: "php-badwords",
+            name: "Php-badwords",
         },
         {
             href: "https://github.com/Ibra1822/php-hotel",
-            name: "php-hotel",
+            name: "Php-hotel",
         },
         {
             href: "https://github.com/Ibra1822/php-strong-password-generator",
-            name: "php-strong-password-generator",
+            name: "Php-strong-password-generator",
         },
         {
             href: "https://github.com/Ibra1822/php-dischi-json",
-            name: "php-dischi-json",
+            name: "Php-dischi-json",
         },
         {
             href: "https://github.com/Ibra1822/php-oop-1",
-            name: "php-oop-1",
+            name: "Php-oop-1",
         },
         {
             href: "https://github.com/Ibra1822/php-oop-2",
-            name: "php-oop-2",
+            name: "Php-oop-2",
         },
     ],
 
@@ -210,6 +210,45 @@ export const store = reactive({
         {
             href: "https://github.com/Ibra1822/db-university",
             name: " Db-university ",
+        },
+    ],
+
+    laravel_eighth: [
+        {
+            href: "https://github.com/Ibra1822/laravel-primi-passi",
+            name: "Laravel-Primi-Passi",
+        },
+        {
+            href: "https://github.com/Ibra1822/laravel-comics",
+            name: "Laravel-Comics",
+        },
+        {
+            href: "https://github.com/Ibra1822/laravel-model-controller",
+            name: "Laravel-model-controller",
+        },
+        {
+            href: "https://github.com/Ibra1822/laravel-migration-seeder",
+            name: "Laravel-migration-seeder",
+        },
+        {
+            href: "https://github.com/Ibra1822/laravel-dc-comics",
+            name: "Laravel-dc-comics",
+        },
+        {
+            href: "https://github.com/Ibra1822/laravel-auth",
+            name: "Laravel-auth ",
+        },
+        {
+            href: "https://github.com/Ibra1822/laravel-one-to-many",
+            name: "Laravel-one-to-many",
+        },
+        {
+            href: "https://github.com/Ibra1822/laravel-many-to-many",
+            name: "Laravel-many-to-many ",
+        },
+        {
+            href: "https://github.com/Ibra1822/laravel-api",
+            name: "Laravel-Api ",
         },
     ],
 });

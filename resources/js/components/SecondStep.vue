@@ -10,7 +10,7 @@ export default {
 };
 </script>
 <template>
-    <div class="second-step">
+    <div class="new-step">
         <div class="step-left">
             <img
                 src="https://www.byte-post.com/wp-content/uploads/2019/04/download.png"
@@ -32,45 +32,19 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-.second-step {
-    display: flex;
-    .step-left {
-        width: 50%;
-        height: 650px;
-        padding: 30px;
-        img {
-            height: 90%;
-            margin: 30px;
-        }
+.step-right {
+    h2 {
+        color: #0070bb;
     }
-    .step-right {
-        width: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        p {
-            font-size: 1.5rem;
-            color: #2aa8de;
-        }
-        h2 {
-            font-size: 2.6rem;
-            color: #0171bb;
-        }
-        ul {
-            list-style: none;
-            li {
-                margin: 20px;
-                a {
-                    text-decoration: none;
-                    color: #0171bb;
-                    padding: 10px 20px;
-                    font-size: 1.3rem;
-
-                    &:hover {
-                        border: 1px solid #2aa8de;
-                        border-radius: 5px;
-                    }
+    p {
+        color: #0470ba;
+    }
+    ul {
+        li {
+            a {
+                color: #0070bb;
+                &:hover {
+                    border-color: #0070bb;
                 }
             }
         }
