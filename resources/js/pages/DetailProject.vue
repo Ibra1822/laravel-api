@@ -50,8 +50,7 @@ export default {
 h1 {
     text-align: center;
     margin: 20px 0px;
-    color: #fff;
-    text-shadow: 0px 0px 10px #000;
+    color: cadetblue;
 }
 .container {
     width: 75%;
@@ -59,47 +58,47 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #000;
+    border: 1.5px solid cadetblue;
     border-radius: 10px;
     padding: 30px;
-    box-shadow: inset 0px 0px 10px lightslategrey;
     text-align: center;
     padding: 60px;
     h3 {
         font-size: 1.8rem;
         margin-bottom: 15px;
-        color: #fff;
-        text-shadow: 0px 0px 10px #000;
+        color: cadetblue;
     }
     .ty-badge {
         width: 100px;
         padding: 15px 0;
-        background-color: gainsboro;
+        background-color: rgb(64, 195, 200);
         color: #fff;
         font-weight: bold;
         display: inline-block;
         border-radius: 10px;
+        cursor: default;
     }
     .te-badge {
         display: inline-block;
         width: 100px;
         padding: 15px 0;
-        background-color: gainsboro;
+        background-color: rgb(2, 163, 168);
         color: #fff;
         font-weight: bold;
         margin: 10px 20px;
         border-radius: 10px;
+        cursor: default;
     }
 
     img {
         width: 300px;
+        border-radius: 5px;
     }
 
     p {
         margin: 20px 0;
         font-style: italic;
-        color: #fff;
-        text-shadow: 0px 0px 10px #000;
+        color: cadetblue;
     }
 }
 </style>

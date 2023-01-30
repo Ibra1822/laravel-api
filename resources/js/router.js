@@ -1,8 +1,8 @@
 import { createRouter, createWebHistory } from "vue-router";
 import home from "./pages/home.vue";
-import about from "./pages/about.vue";
 import projects from "./pages/projects.vue";
 import DetailProject from "./pages/DetailProject.vue";
+import msg from "./pages/msg.vue";
 import errore404 from "./pages/errore404.vue";
 const router = createRouter({
     history: createWebHistory(),
@@ -14,14 +14,14 @@ const router = createRouter({
             component: home,
         },
         {
-            path: "/chi-siamo",
-            name: "about",
-            component: about,
-        },
-        {
             path: "/progetti",
             name: "projects",
             component: projects,
+        },
+        {
+            path: "/send-msg",
+            name: "msg",
+            component: msg,
         },
         {
             path: "/dettaglio-progetti/:slug",

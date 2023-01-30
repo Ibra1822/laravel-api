@@ -9,11 +9,14 @@ export default {
 
 <template>
     <div class="container">
-        <router-link
-            :to="{ name: 'DetailProject', params: { slug: project.slug } }"
-        >
-            <h3>{{ project.name }}</h3>
-        </router-link>
+        <div>
+            <router-link
+                :to="{ name: 'DetailProject', params: { slug: project.slug } }"
+            >
+                {{ project.name }}
+            </router-link>
+        </div>
+
         <h3>{{ project.client_name }}</h3>
         <p>{{ project.summary }}</p>
     </div>
@@ -23,20 +26,29 @@ export default {
 .container {
     width: 85%;
     margin: 35px auto;
-    border: 1px solid #000;
+    border: 2px solid cadetblue;
     border-radius: 10px;
-    padding: 30px;
-    box-shadow: inset 0px 0px 10px lightslategrey;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px #fff;
     h3,
     p {
         margin: 20px;
+        font-style: italic;
     }
+    p {
+        color: cadetblue;
+        cursor: default;
+    }
+
     a {
         text-decoration: none;
-        text-align: center;
-        color: lightslategray;
+        color: cadetblue;
+        border: 1px solid transparent;
+        padding: 10px 20px;
         &:hover {
-            text-decoration: underline;
+            border: 1px solid cadetblue;
+            border-radius: 10px;
         }
     }
 }

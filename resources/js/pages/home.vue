@@ -50,13 +50,10 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-.debug {
-    border: 1px solid #000;
-}
-
 .cont-jumbo {
     height: 600px;
-    background-image: url("https://ithemes.com/wp-content/uploads/2019/08/What-is-Your-Website-Design-Process-Blog-Post-Feature-Image-36119-01.png");
+    background-color: cadetblue;
+    background-image: url("../../images/What-is-Your-Website-Design-Process-Blog-Post-Feature-Image-36119-01-1-1024x537.png");
     background-position: center;
     background-size: cover;
     padding: 45px;
@@ -75,7 +72,7 @@ export default {
     padding: 40px;
     background-color: #f6f6f6;
     h2 {
-        color: #000;
+        color: cadetblue;
         font-size: 2rem;
     }
 }

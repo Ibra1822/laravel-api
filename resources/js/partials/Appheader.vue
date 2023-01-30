@@ -11,10 +11,10 @@ export default {
                 <router-link :to="{ name: 'home' }">Home</router-link>
             </li>
             <li>
-                <router-link :to="{ name: 'about' }">Su di noi</router-link>
+                <router-link :to="{ name: 'projects' }">Progetti</router-link>
             </li>
             <li>
-                <router-link :to="{ name: 'projects' }">Progetti</router-link>
+                <router-link :to="{ name: 'msg' }">Contact Us</router-link>
             </li>
         </ul>
     </header>
@@ -24,10 +24,11 @@ export default {
 header {
     height: 100px;
     padding: 0px 70px;
-    background-color: #9a6eeb;
+    background-color: cadetblue;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    border-bottom: 1px solid #fff;
     ul {
         display: flex;
         list-style: none;

@@ -25,8 +25,26 @@ export default {
 };
 </script>
 <template>
-    <h1>Progetti</h1>
-    <ProjectCard v-for="item in this.projects" :key="item.id" :project="item" />
+    <div class="all">
+        <h1>Progetti</h1>
+        <ProjectCard
+            v-for="item in this.projects"
+            :key="item.id"
+            :project="item"
+        />
+    </div>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.all {
+    background-color: cadetblue;
+    padding: 20px;
+}
+h1 {
+    text-align: center;
+    padding: 30px 0px;
+    color: #fff;
+    text-shadow: 0px 0px 1px #fff;
+    cursor: default;
+}
+</style>
