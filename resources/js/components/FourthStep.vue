@@ -46,6 +46,7 @@ export default {
         justify-content: center;
         align-items: center;
         width: 50%;
+        text-align: center;
         h2 {
             font-size: 2.4rem;
             color: #e5a127;

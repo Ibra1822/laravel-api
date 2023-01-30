@@ -42,6 +42,7 @@ export default {
         display: flex;
         justify-content: center;
         align-items: center;
+        text-align: center;
         h2 {
             font-size: 2.6rem;
             color: #41b783;

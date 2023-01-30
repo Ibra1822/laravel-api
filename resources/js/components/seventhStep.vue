@@ -1,7 +1,7 @@
 <script>
 import { store } from "../data/store";
 export default {
-    name: "SixthStep",
+    name: "SeventhStep",
     data() {
         return {
             store,
@@ -10,19 +10,19 @@ export default {
 };
 </script>
 <template>
-    <div class="sixth-step">
+    <div class="seventh-step">
         <div class="step-left">
             <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/1200px-PHP-logo.svg.png"
+                src="https://www.geekandjob.com/uploads/wiki/eceb15684d4183c66f73c1a9bb777eef708b2b66.png"
                 alt=""
             />
         </div>
         <div class="step-right">
             <div>
-                <h2>Php</h2>
-                <p>Linguaggio Back-End</p>
+                <h2>MySql</h2>
+                <p>DataBase</p>
                 <ul>
-                    <li v-for="item in store.Php_sixth" :key="item">
+                    <li v-for="item in store.mySql_seventh" :key="item">
                         <a :href="item.href">{{ item.name }}</a>
                     </li>
                 </ul>
@@ -32,16 +32,15 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-.sixth-step {
+.seventh-step {
     display: flex;
+    background-color: #f6f5f7;
     .step-left {
         width: 50%;
-        padding: 40px;
         img {
             height: 300px;
         }
     }
-
     .step-right {
         width: 50%;
         display: flex;
@@ -50,11 +49,11 @@ export default {
         text-align: center;
         h2 {
             font-size: 2.6rem;
-            color: #787cb4;
+            color: #e58e00;
         }
         p {
             font-size: 1.5rem;
-            color: #474b8a;
+            color: #01618b;
         }
         ul {
             list-style: none;
@@ -64,10 +63,10 @@ export default {
                     text-decoration: none;
                     font-size: 1.3rem;
                     padding: 10px 20px;
-                    color: #787cb4;
+                    color: #e58e00;
                     border: 1px solid transparent;
                     &:hover {
-                        border: 1px solid #787cb4;
+                        border: 1px solid #e58e00;
                         border-radius: 5px;
                     }
                 }

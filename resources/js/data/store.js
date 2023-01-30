@@ -201,4 +201,15 @@ export const store = reactive({
             name: "php-oop-2",
         },
     ],
+
+    mySql_seventh: [
+        {
+            href: "https://github.com/Ibra1822/db-first",
+            name: "Db-First",
+        },
+        {
+            href: "https://github.com/Ibra1822/db-university",
+            name: " Db-university ",
+        },
+    ],
 });
