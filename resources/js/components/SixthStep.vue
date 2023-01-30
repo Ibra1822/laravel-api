@@ -1,7 +1,7 @@
 <script>
 import { store } from "../data/store";
 export default {
-    name: "ThirdStem",
+    name: "SixthStep",
     data() {
         return {
             store,
@@ -10,19 +10,19 @@ export default {
 };
 </script>
 <template>
-    <div class="third-step">
+    <div class="sixth-step">
         <div class="step-left">
             <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1200px-Bootstrap_logo.svg.png"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/1200px-PHP-logo.svg.png"
                 alt=""
             />
         </div>
         <div class="step-right">
             <div>
-                <h2>Bootstrap</h2>
-                <p>Libreria di CSS</p>
+                <h2>Php</h2>
+                <p>Linguaggio Back-End</p>
                 <ul>
-                    <li v-for="item in store.Bootstrap_third" :key="item">
+                    <li v-for="item in store.Php_sixth" :key="item">
                         <a :href="item.href">{{ item.name }}</a>
                     </li>
                 </ul>
@@ -32,46 +32,43 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-.third-step {
-    height: 600px;
-    background-color: #f6f5f7;
+.sixth-step {
     display: flex;
-    padding: 40px;
-    margin: 0;
     .step-left {
         width: 50%;
+        padding: 40px;
         img {
-            height: 80%;
+            height: 300px;
         }
     }
+
     .step-right {
         width: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
-        text-align: center;
         h2 {
             font-size: 2.6rem;
-            color: #7308f5;
+            color: #787cb4;
         }
         p {
             font-size: 1.5rem;
-            color: #8b0dfc;
+            color: #474b8a;
         }
         ul {
             list-style: none;
             li {
                 margin: 20px 0px;
-            }
-            a {
-                text-decoration: none;
-                color: #7308f5;
-                padding: 10px 20px;
-                font-size: 1.3rem;
-                border: 1px solid transparent;
-                &:hover {
-                    border: 1px solid #7308f5;
-                    border-radius: 5px;
+                a {
+                    text-decoration: none;
+                    font-size: 1.3rem;
+                    padding: 10px 20px;
+                    color: #787cb4;
+                    border: 1px solid transparent;
+                    &:hover {
+                        border: 1px solid #787cb4;
+                        border-radius: 5px;
+                    }
                 }
             }
         }

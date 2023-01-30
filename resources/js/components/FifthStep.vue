@@ -59,6 +59,7 @@ export default {
                     font-size: 1.3rem;
                     padding: 10px 20px;
                     color: #41b783;
+                    border: 1px solid transparent;
                     &:hover {
                         border: 1px solid #41b783;
                         border-radius: 5px;

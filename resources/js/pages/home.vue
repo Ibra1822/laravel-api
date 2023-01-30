@@ -6,6 +6,7 @@ import ThirdStep from "../components/ThirdStep.vue";
 import Sep2 from "../components/Sep2.vue";
 import FourthStep from "../components/FourthStep.vue";
 import FifthStep from "../components/FifthStep.vue";
+import SixthStep from "../components/SixthStep.vue";
 export default {
     name: "Home",
     components: {
@@ -16,6 +17,7 @@ export default {
         Sep2,
         FourthStep,
         FifthStep,
+        SixthStep,
     },
 };
 </script>
@@ -36,6 +38,7 @@ export default {
     <Sep2 />
     <FifthStep />
     <Separator />
+    <SixthStep />
 </template>
 
 <style lang="scss" scoped>

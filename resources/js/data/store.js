@@ -174,4 +174,31 @@ export const store = reactive({
             name: "Proj-html-vuejs",
         },
     ],
+
+    Php_sixth: [
+        {
+            href: "https://github.com/Ibra1822/php-badwords",
+            name: "php-badwords",
+        },
+        {
+            href: "https://github.com/Ibra1822/php-hotel",
+            name: "php-hotel",
+        },
+        {
+            href: "https://github.com/Ibra1822/php-strong-password-generator",
+            name: "php-strong-password-generator",
+        },
+        {
+            href: "https://github.com/Ibra1822/php-dischi-json",
+            name: "php-dischi-json",
+        },
+        {
+            href: "https://github.com/Ibra1822/php-oop-1",
+            name: "php-oop-1",
+        },
+        {
+            href: "https://github.com/Ibra1822/php-oop-2",
+            name: "php-oop-2",
+        },
+    ],
 });
