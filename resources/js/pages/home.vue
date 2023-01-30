@@ -2,12 +2,16 @@
 import FirstStep from "../components/FirstStep.vue";
 import Separator from "../components/Separator.vue";
 import SecondStep from "../components/SecondStep.vue";
+import ThirdStep from "../components/ThirdStep.vue";
+import Sep2 from "../components/Sep2.vue";
 export default {
     name: "Home",
     components: {
         FirstStep,
         Separator,
         SecondStep,
+        ThirdStep,
+        Sep2,
     },
 };
 </script>
@@ -21,6 +25,9 @@ export default {
     <FirstStep />
     <Separator />
     <SecondStep />
+    <Sep2 />
+    <ThirdStep />
+    <Separator />
 </template>
 
 <style lang="scss" scoped>

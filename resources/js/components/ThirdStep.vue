@@ -1,7 +1,7 @@
 <script>
 import { store } from "../data/store";
 export default {
-    name: "SecondStep",
+    name: "ThirdStem",
     data() {
         return {
             store,
@@ -10,19 +10,19 @@ export default {
 };
 </script>
 <template>
-    <div class="second-step">
+    <div class="third-step">
         <div class="step-left">
             <img
-                src="https://www.byte-post.com/wp-content/uploads/2019/04/download.png"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1200px-Bootstrap_logo.svg.png"
                 alt=""
             />
         </div>
         <div class="step-right">
             <div>
-                <h2>Css</h2>
-                <p>Lo stile in ogni pagina Web</p>
+                <h2>Bootstrap</h2>
+                <p>Libreria di CSS</p>
                 <ul>
-                    <li v-for="item in store.css_second" :key="item">
+                    <li v-for="item in store.Bootstrap_third" :key="item">
                         <a :href="item.href">{{ item.name }}</a>
                     </li>
                 </ul>
@@ -32,15 +32,16 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-.second-step {
+.third-step {
+    height: 600px;
+    background-color: #f6f5f7;
     display: flex;
+    padding: 40px;
+    margin: 0;
     .step-left {
         width: 50%;
-        height: 650px;
-        padding: 30px;
         img {
-            height: 90%;
-            margin: 30px;
+            height: 80%;
         }
     }
     .step-right {
@@ -49,28 +50,28 @@ export default {
         justify-content: center;
         align-items: center;
         text-align: center;
-        p {
-            font-size: 1.5rem;
-            color: #2aa8de;
-        }
         h2 {
             font-size: 2.6rem;
-            color: #0171bb;
+            color: #7308f5;
+        }
+        p {
+            font-size: 1.5rem;
+            color: #8b0dfc;
         }
         ul {
             list-style: none;
             li {
-                margin: 20px;
-                a {
-                    text-decoration: none;
-                    color: #0171bb;
-                    padding: 10px 20px;
-                    font-size: 1.3rem;
+                margin: 20px 0px;
+            }
+            a {
+                text-decoration: none;
+                color: #7308f5;
+                padding: 10px 20px;
+                font-size: 1.3rem;
 
-                    &:hover {
-                        border: 1px solid #2aa8de;
-                        border-radius: 5px;
-                    }
+                &:hover {
+                    border: 1px solid #7308f5;
+                    border-radius: 5px;
                 }
             }
         }

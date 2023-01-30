@@ -1,6 +1,12 @@
 <script>
+import { store } from "../data/store";
 export default {
     name: "FirstStep",
+    data() {
+        return {
+            store,
+        };
+    },
 };
 </script>
 <template>
@@ -17,16 +23,8 @@ export default {
                 <p>La struttura di ogni pagina Web</p>
                 <div class="links">
                     <ul>
-                        <li>
-                            <a href="https://github.com/Ibra1822/htmlcss-hello"
-                                >Htmlcss-Hello</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                href="https://github.com/Ibra1822/html-london-trip"
-                                >Html-London-Trip</a
-                            >
+                        <li v-for="item in store.html_first" :key="item">
+                            <a :href="item.href">{{ item.name }}</a>
                         </li>
                     </ul>
                 </div>
