@@ -29,4 +29,6 @@ Route::namespace('Api')
 
         });
 
+
+
 Route::post('/contact',[LeadController::class,'store']);

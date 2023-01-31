@@ -8,6 +8,7 @@ export default {
             name: "",
             email: "",
             message: "",
+            errors: {},
         };
     },
     methods: {
@@ -18,8 +19,10 @@ export default {
                 message: this.message,
             };
 
-            axios.post(this.api + "contact/" + data).then((result) => {
-                console.log(result);
+            axios.post(this.api + "contact/", data).then((result) => {
+                if (!result.data.sucess) {
+                    this.errors = result.data.errors;
+                }
             });
         },
     },
@@ -32,25 +35,43 @@ export default {
         <form @submit.prevent="this.sendForm()">
             <div>
                 <input
-                    v-model="this.name"
+                    v-model.trim="name"
                     type="text"
+                    :class="{ error: errors.name }"
                     placeholder="Inserisci il tuo nome"
                 />
+                <p v-for="(error, index) in errors.name" :key="'name' + index">
+                    {{ error }}
+                </p>
             </div>
             <div>
                 <input
-                    v-model="this.email"
+                    v-model.trim="email"
                     type="text"
+                    :class="{ error: errors.email }"
                     placeholder="Inserisci la tua email "
                 />
+                <p
+                    v-for="(error, index) in errors.email"
+                    :key="'email' + index"
+                >
+                    {{ error }}
+                </p>
             </div>
             <div>
                 <textarea
-                    v-model="this.message"
+                    v-model.trim="message"
+                    :class="{ error: errors.message }"
                     name=""
                     id=""
                     rows="10"
                 ></textarea>
+                <p
+                    v-for="(error, index) in errors.message"
+                    :key="'message' + index"
+                >
+                    {{ error }}
+                </p>
             </div>
             <button type="submit">Invia</button>
         </form>
@@ -70,14 +91,17 @@ form {
     textarea {
         width: 500px;
         padding: 15px 20px;
-        margin: 20px 0;
         border-radius: 10px;
         border: 1px solid cadetblue;
         resize: none;
+        margin: 10px;
+    }
+    p {
+        color: red;
     }
     button {
         display: block;
-        margin: auto;
+        margin: 20px auto;
         padding: 10px 35px;
         background-color: cadetblue;
         border: none;
@@ -85,5 +109,8 @@ form {
         color: #fff;
         cursor: pointer;
     }
+}
+.error {
+    border: 1px solid red;
 }
 </style>
