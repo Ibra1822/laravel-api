@@ -32,6 +32,14 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+.new-step{
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+.step-left{
+    display: flex;
+    justify-content: center;
+}
 .step-right {
     h2 {
         color: #efbe25;

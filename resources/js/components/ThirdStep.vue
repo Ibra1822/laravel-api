@@ -34,6 +34,12 @@ export default {
 <style lang="scss" scoped>
 .new-step {
     background-color: #f6f5f7;
+
+}
+
+.step-left{
+    display: flex;
+    justify-content: center;
 }
 .step-right {
     h2 {
