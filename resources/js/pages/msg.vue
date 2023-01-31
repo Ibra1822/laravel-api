@@ -9,10 +9,12 @@ export default {
             email: "",
             message: "",
             errors: {},
+            is_load:false
         };
     },
     methods: {
         sendForm() {
+            this.is_load = true
             const data = {
                 name: this.name,
                 email: this.email,
@@ -20,8 +22,14 @@ export default {
             };
 
             axios.post(this.api + "contact/", data).then((result) => {
+                this.is_load = false
                 if (!result.data.sucess) {
                     this.errors = result.data.errors;
+                }else{
+                    this.name = '';
+                    this.email ='';
+                    this.message ='';
+                    this.errors = {}
                 }
             });
         },
@@ -62,7 +70,6 @@ export default {
                 <textarea
                     v-model.trim="message"
                     :class="{ error: errors.message }"
-                    name=""
                     id=""
                     rows="10"
                 ></textarea>
@@ -73,7 +80,7 @@ export default {
                     {{ error }}
                 </p>
             </div>
-            <button type="submit">Invia</button>
+            <button type="submit" :disabled="is_load">{{ is_load ? 'Sto inviando...': 'Invia' }}</button>
         </form>
     </div>
 </template>
@@ -89,7 +96,7 @@ h1 {
 form {
     input,
     textarea {
-        width: 500px;
+        width: 700px;
         padding: 15px 20px;
         border-radius: 10px;
         border: 1px solid cadetblue;
@@ -102,7 +109,7 @@ form {
     button {
         display: block;
         margin: 20px auto;
-        padding: 10px 35px;
+        padding: 15px 45px;
         background-color: cadetblue;
         border: none;
         border-radius: 10px;

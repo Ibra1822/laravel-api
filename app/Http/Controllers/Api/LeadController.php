@@ -3,7 +3,10 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Mail\NewContact;
+use App\Models\Lead;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Validator;
 
 class LeadController extends Controller
@@ -37,6 +40,16 @@ class LeadController extends Controller
 
             return response()->json(compact('sucess','errors'));
         }
+
+        $newLead = new Lead();
+
+        $newLead->fill($data);
+
+        $newLead->save();
+
+         Mail::to("hello@example.com")->send(new NewContact($newLead));
+
+        return response()->json(compact('sucess'));
 
     }
 }
