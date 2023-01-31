@@ -19,7 +19,7 @@ const router = createRouter({
             component: projects,
         },
         {
-            path: "/send-msg",
+            path: "/contact-us",
             name: "msg",
             component: msg,
         },
